@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> projects</title>
+    <link rel="stylesheet" href="style5.css">
+    </head>
+<body>
+   
+    <div class="container">
+            
+        <div class="box box1">
+            <video src="video/reel.mp4" autoplay muted loop></video>
+            <div class="content">
+                <h2>Project One</h2>
+            </div>
+        </div>
+
+        <div class="box box2">
+            <div class="content">
+                <h2>Project Two</h2>
+            </div>
+        </div>
+    
+        <div class="box box3">
+            <div class="content">
+                <h2>Project Three</h2>
+            </div>
+        </div>
+
+    
+    </div>
+
+    <script>
+        let box = document.querySelectorAll('.box');
+        box.forEach(popup =>popup.addEventListener('click', () => {
+            popup.classList.toggle('active')
+        }))
+    </script>
+
+</body>
+
+
+
+
+</html>
